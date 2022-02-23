@@ -1,15 +1,28 @@
 #include<stdio.h>
-int main() 
+int main()
 {
-   int i, j,rows;
-  // printf("Enter the number of rows: ");
-  scanf("%d", &rows);
-   for (i = rows; i >= 1; --i) {
-      for (j = 1; j <= i; ++j) {
-         printf("%d", j);
-      }
-      printf("
+ int i,j,k,rows,count,temp=1;
+ //printf("Enter number of rows:
 ");
-   }
-   return 0;
+ scanf("%d",&rows);
+ count=rows-1;
+ for(i=1;i<=rows;i++) 
+{
+ for(j=1;j<=count;j++) 
+{
+ printf(" ");
+ 
+}
+ for(k=1;k<=temp;k++) 
+{
+ printf("%d",i);
+ 
+}
+ count--;
+ temp+=2;
+ printf("
+");
+ 
+}
+
 }
